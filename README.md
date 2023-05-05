@@ -20,6 +20,8 @@ Abaixo você tem explicações sobre cada arquivo
 
 #### Aceita uma entrada para tempo em segundo por meio do comando ```set``` e desligar o computador após o tempo escolhido.
 
+- ### [game](https://github.com/CLedsonB/TreinoBat/blob/main/game.bat)
+
 - ### [instalador](https://github.com/CLedsonB/TreinoBat/blob/main/instalador.bat)
 
 #### Faz a cópia dos instaladores do git e vscode para a pasta documento do computador e faz a instalação
