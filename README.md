@@ -14,8 +14,6 @@ Abaixo você tem explicações sobre cada arquivo
 #### No trecho _"amor"_ exibe um desenho ascii
 #### No trecho _"odio"_ o computador é desligado em 10 segundos
 
-- ### [clear](https://github.com/CLedsonB/TreinoBat/blob/main/clear.bat)
-
 - ### [desligar](https://github.com/CLedsonB/TreinoBat/blob/main/desligar.bat)
 
 #### Aceita uma entrada para tempo em segundo por meio do comando ```set``` e desligar o computador após o tempo escolhido.
@@ -32,9 +30,12 @@ Abaixo você tem explicações sobre cada arquivo
 
 - ### [lixeira](https://github.com/CLedsonB/TreinoBat/blob/main/lixeira.bat)
 
-#### Clique rápido para acesso á lixeira quando ele não é encontrada facilmente.
+#### Clique rápido para acesso a lixeira quando ele não é encontrada facilmente.
 
 - ### [padrao](https://github.com/CLedsonB/TreinoBat/blob/main/padrao.txt)
+
+#### contem trechos de comandos bat para taferas diversas
+
 - ### [wifi](https://github.com/CLedsonB/TreinoBat/blob/main/wifi.bat)
 
 #### lista ponto de acesso á internet salvos no computador e aceita como entrada ua das redes listadas onde você ode conferir a senha se ela estiver abaixo da seção _Chave de Segurança_ e ao lado do _Conteudo da Chave_. Entretanto algumas redes não exibem a senha.
@@ -42,3 +43,7 @@ Abaixo você tem explicações sobre cada arquivo
 - ### [zap](https://github.com/CLedsonB/TreinoBat/blob/main/zap.bat)
 
 #### laço de repetição para mudança de cor do terminal.
+
+- ### [luzes](https://github.com/CLedsonB/TreinoBat/blob/main/luzes)
+
+#### execução de varias cmd alternando de cores ao mesmo tempo, como um zap.bat reforçado
