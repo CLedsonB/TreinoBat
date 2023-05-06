@@ -4,11 +4,15 @@
 Abaixo você tem explicações sobre cada arquivo
 </h3>
 
-- ### [RelogioDigital](https://github.com/CLedsonB/TreinoBat/blob/main/RelogioDigital.bat)
+- ### [RelogioDigital](https://github.com/CLedsonB/TreinoBat/blob/main/RelogioDigital.png)
+
+![RelogioDigital-IMG](https://github.com/CLedsonB/TreinoBat/blob/main/img/RelogioDigital.png)
 
 #### Exibe data e hora carregando variaveis internas do s.o. windowns num laço de repetição
 
 - ### [amorOdio](https://github.com/CLedsonB/TreinoBat/blob/main/amorOdio.bat)
+
+![amorOdio-IMG](https://github.com/CLedsonB/TreinoBat/blob/main/img/amorOdio.png)
 
 #### Aceita uma entrada por meio do comando ```set``` que encaminha para duas respota diferente contida no trecho ```:amor``` e ```:odio```.
 #### No trecho _"amor"_ exibe um desenho ascii
@@ -19,6 +23,8 @@ Abaixo você tem explicações sobre cada arquivo
 #### Aceita uma entrada para tempo em segundo por meio do comando ```set``` e desligar o computador após o tempo escolhido.
 
 - ### [game](https://github.com/CLedsonB/TreinoBat/blob/main/game.bat)
+
+![game-IMG](https://github.com/CLedsonB/TreinoBat/blob/main/img/game.png)
 
 #### Um mini-game chamado ""Guardião do castelo". Você responde com número ou palavras seguindo as orientações e luta contra monstros, você pode incluise fugir da batalha kkk.
 
