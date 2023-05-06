@@ -20,6 +20,8 @@ Abaixo você tem explicações sobre cada arquivo
 
 - ### [game](https://github.com/CLedsonB/TreinoBat/blob/main/game.bat)
 
+#### Um mini-game chamado ""Guardião do castelo". Você responde com número ou palavras seguindo as orientações e luta contra monstros, você pode incluise fugir da batalha kkk.
+
 - ### [instalador](https://github.com/CLedsonB/TreinoBat/blob/main/instalador.bat)
 
 #### Faz a cópia dos instaladores do git e vscode para a pasta documento do computador e faz a instalação
