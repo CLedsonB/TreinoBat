@@ -151,18 +151,50 @@ echo.		....Ataques....
 
 set /a num= %random%
 
-if %num% gtr 10 goto LUTAR_LOOP
-if %num% lss 5 goto LUTAR_LOOP
+if %num% gtr 40 goto LUTAR_LOOP
+if %num% lss 1 goto LUTAR_LOOP
 
+if %num% == 1 goto PERDER_LUTA
+if %num% == 2 goto PERDER_LUTA
+if %num% == 3 goto PERDER_LUTA
+if %num% == 4 goto PERDER_LUTA
 if %num% == 5 goto PERDER_LUTA
 if %num% == 6 goto PERDER_LUTA
 if %num% == 7 goto PERDER_LUTA
+if %num% == 8 goto PERDER_LUTA
+if %num% == 9 goto PERDER_LUTA
+if %num% == 10 goto PERDER_LUTA
+if %num% == 11 goto PERDER_LUTA
+if %num% == 12 goto PERDER_LUTA
+if %num% == 13 goto PERDER_LUTA
+if %num% == 14 goto PERDER_LUTA
+if %num% == 15 goto PERDER_LUTA
+if %num% == 16 goto PERDER_LUTA
+if %num% == 17 goto PERDER_LUTA
+if %num% == 18 goto PERDER_LUTA
+if %num% == 19 goto PERDER_LUTA
+if %num% == 20 goto PERDER_LUTA
 
-if %num% == 8 goto GANHAR_LUTA
-if %num% == 9 goto GANHAR_LUTA
-if %num% == 10 goto GANHAR_LUTA
-
-
+if %num% == 21 goto GANHAR_LUTA
+if %num% == 22 goto GANHAR_LUTA
+if %num% == 23 goto GANHAR_LUTA
+if %num% == 24 goto GANHAR_LUTA
+if %num% == 25 goto GANHAR_LUTA
+if %num% == 26 goto GANHAR_LUTA
+if %num% == 27 goto GANHAR_LUTA
+if %num% == 28 goto GANHAR_LUTA
+if %num% == 29 goto GANHAR_LUTA
+if %num% == 30 goto GANHAR_LUTA
+if %num% == 31 goto GANHAR_LUTA
+if %num% == 32 goto GANHAR_LUTA
+if %num% == 33 goto GANHAR_LUTA
+if %num% == 34 goto GANHAR_LUTA
+if %num% == 35 goto GANHAR_LUTA
+if %num% == 36 goto GANHAR_LUTA
+if %num% == 37 goto GANHAR_LUTA
+if %num% == 38 goto GANHAR_LUTA
+if %num% == 39 goto GANHAR_LUTA
+if %num% == 40 goto GANHAR_LUTA
 ______________________________________________
 
 :PERDER_LUTA
