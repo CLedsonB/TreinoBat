@@ -18,6 +18,12 @@ Abaixo você tem explicações sobre cada arquivo
 #### No trecho _"amor"_ exibe um desenho ascii
 #### No trecho _"odio"_ o computador é desligado em 10 segundos
 
+- ### [atalhos](https://github.com/CLedsonB/TreinoBat/blob/main/atalhos.bat)
+<p>Um guia de atalhos, esses atalhos podem ser sites ou canais do youtube. Conforme você responde as entradas pedidas consegue acessar sites e canais importante em pouco tempo.</p>
+<p>As guias são abertas anonimamente. sendo necessario assim fazer login no site escolhido</p>
+<p><b>Planos para o futuro : </b>Adicona a opção para abrir guias anônimas ou não</p>
+
+
 - ### [desligar](https://github.com/CLedsonB/TreinoBat/blob/main/desligar.bat)
 
 #### Aceita uma entrada para tempo em segundo por meio do comando ```set``` e desligar o computador após o tempo escolhido.
