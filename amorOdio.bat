@@ -1,5 +1,6 @@
 echo --REDIMENSIONANDO TELA E COLORINDO---
 @echo off
+chcp 65001
 mode con:cols=70 lines=40
 color 57
 cls
