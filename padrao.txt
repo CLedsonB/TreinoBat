@@ -3,15 +3,12 @@ echo --REDIMENSIONANDO TELA E COLORINDO---
 mode con:cols=50 lines=20
 color 02
 echo off
+chcp 65001 (permiti UTF-8)
 
 echo --LIMPEZA DE THUMBS--
 
 cd /d 
 del *_thum*
-cd /d 
-del *_thum*
-
-echo ----ARQUIVOS THUMBS DELETADOS----
 
 echo --MOVER ARQUIVOS--
 
@@ -19,10 +16,6 @@ cd /d
 md $PASTA
 move [caminho1+arquivo]  [caminho2]
 
-echo -ARQUIVOS MOVIDOS--
-
 echo --CONVERTER ARQUIVO--
 
 forfiles /P "" /s /m * /c "cmd /c rename @file @fname[EXTENSAO]"
-
-echo --ARQUIVOS CONVERTIDOS
