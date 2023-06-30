@@ -26,13 +26,13 @@ Abaixo você tem explicações sobre cada arquivo
 
 - ### [desligar](https://github.com/CLedsonB/TreinoBat/blob/main/desligar.bat)
 
-#### Aceita uma entrada para tempo em segundo por meio do comando ```set``` e desligar o computador após o tempo escolhido.
+#### Aceita uma entrada para tempo em segundo por meio do comando ```choice``` e pode desligar ou reiniciar o computador após o tempo escolhido.
 
 - ### [game](https://github.com/CLedsonB/TreinoBat/blob/main/game.bat)
 
 ![game-IMG](https://github.com/CLedsonB/TreinoBat/blob/main/img/game.png)
 
-#### Um mini-game chamado ""Guardião do castelo". Você responde com número ou palavras seguindo as orientações e luta contra monstros, você pode incluise fugir da batalha kkk.
+#### Um mini-game chamado ""Guardião do castelo". Você responde com número ou palavras seguindo as orientações e luta contra monstros, você pode inclusive fugir da batalha kkk.
 
 - ### [instalador](https://github.com/CLedsonB/TreinoBat/blob/main/instalador.bat)
 
