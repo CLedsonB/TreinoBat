@@ -17,11 +17,11 @@ echo 		(1) Iniciar
 echo 		(2) Creditos
 echo 		(3) Sair
 echo.
-set /p opc=.	Responda com (1 / 2 / 3) : 
+choice /c 123 /n /m "--- Digite aqui : "
 
-if %opc% == 1 goto INICIAR1
-if %opc% == 2 goto CREDITOS
-if %opc% == 3 goto SAIR
+if errorlevel 3 goto SAIR
+if errorlevel 2 goto CREDITOS
+if errorlevel 1 goto INICIAR
 
 ______________________________________________
 
@@ -63,23 +63,26 @@ echo.
 echo.
 echo.	Deseja visitar algumas das referencias ?
 echo.
-set /p resposta1=.	Responda com (sim / nao) : 
 
-if %resposta1% == sim goto VISITAR
-if %resposta1% == nao goto MENU
+choice /c sn /m "--- Digite aqui : "
+
+if errorlevel 2 goto MENU
+if errorlevel 1 goto VISITAR
 
 ______________________________________________
 
 :VISITAR
-set /p resposta2=.	Responda com (1 / 2): 
+echo.
+choice /c 12 /m "--- Digite aqui : "
 
-if %resposta2% == 1 start https://github.com/CLedsonB
-if %resposta2% == 2 start https://pt.wikihow.com/Criar-um-Jogo-com-o-CMD
+if errorlevel 1 start https://github.com/CLedsonB
+if errorlevel 2 start https://pt.wikihow.com/Criar-um-Jogo-com-o-CMD
+
+
 goto MENU
-
 ______________________________________________
 
-:INICIAR1
+:INICIAR
 
 mode con:cols=70 lines=30
 color 0B
@@ -96,14 +99,15 @@ echo.	mas eu boto fe em voce, lute guerreiro!
 echo.
 echo.	Gostaria de lutar ou fugir?
 echo.
-set /p opc2=.	Responda com (lutar / fugir) : 
 
-if %opc2% == lutar goto LUTAR1
-if %opc2% == fugir goto FUGIR1
+choice /c fl /m "--- Digite aqui : " 
+
+if errorlevel 2 goto LUTAR
+if errorlevel 1 goto FUGIR
 
 ______________________________________________
 
-:FUGIR1
+:FUGIR
 
 mode con:cols=60 lines=12
 color df
@@ -119,12 +123,12 @@ echo.			"Autor Desconhecido - (2023)"
 echo.
 echo.
 pause
-goto INICIAR1
+goto INICIAR
 
 
 ______________________________________________
 
-:LUTAR1
+:LUTAR
 
 mode con:cols=50 lines=30
 color 4f
@@ -211,11 +215,11 @@ echo.
 echo.	Voce nao e forte o suficiente, meu nobre...
 echo.	Quer tentar de novo ?
 echo.
-set /p resposta3=.	Responda com (sim / nao) : 
 
-if %resposta3% == sim goto MENU
-if %resposta3% == nao goto SAIR
+choice /c sn /m "--- Digite aqui : "
 
+if errorlevel 2 goto SAIR
+if errorlevel 1 goto MENU
 ______________________________________________
 
 :GANHAR_LUTA
@@ -237,9 +241,9 @@ echo.	""""""""""""""""""""""""""""""""
 echo.	Em breve sera o novo rei, meu nobre...
 echo.	Quer tentar de novo ?
 echo.
-set /p resposta4=.	Responda com (sim / nao) : 
 
-if %resposta4% == sim goto LUTAR1
-if %resposta4% == nao goto SAIR
+choice /c sn /m "--- Digite aqui : "
 
+if errorlevel 2 goto SAIR
+if errorlevel 1 goto LUTAR
 ______________________________________________
