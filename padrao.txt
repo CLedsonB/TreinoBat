@@ -1,21 +1,52 @@
-echo --REDIMENSIONANDO TELA E COLORINDO---
+OBS : conjuntos de caracteres em maiusculo devem ser substituido de acordo a necessidade e devem receber conteudo indicado pelo seu nome.
 
-mode con:cols=50 lines=20
-color 02
-echo off
-chcp 65001 (permiti UTF-8)
+type nul > ARQUIVO.BAT 		// criar arquivo vazio
 
-echo --LIMPEZA DE THUMBS--
+setlocal			// configurar para que variaveis criadas se limitem ao arquivo atual
 
-cd /d 
-del *_thum*
+set VAR=VALOR 			// criar variavel
 
-echo --MOVER ARQUIVOS--
+set /p VAR =			//espera entrada do usuário para atribuir valor á VAR 
 
-cd /d 
-md $PASTA
-move [caminho1+arquivo]  [caminho2]
+call ARQUIVO.BAT %VAR% 		// chama variaveis de outro arquivo
 
-echo --CONVERTER ARQUIVO--
+echo %1 			// exibir variavel no arquivo secundario
+
+echo TEXTO > ARQUIVO.BAT 	// adicionar conteudo a primeira linha do arquivo.bat
+
+echo TEXTO >> ARQUIVO.BAT 	// adicionar conteudo a ultima linha do arquivo.bat 
+
+chcp 65001 			// configurar para utf-8
+
+title TEXTO			// definir titulo da janela atual
+
+netsh wlan show profiles	// exibir redes Wi-fi salvas no dispositivo
+
+netsh wlan show NOMEDAREDEWIFI key=clear //exibir informações sobre rede wi-fi escolhida
+
+mode con:cols=xx lines=xx	// valor inteiro em cols define largura e valor inteiro em lines define altura
+
+md VAR
+
+move [CAMINHO1+ARQUIVO]  [CAMINHO2+ARQUIVO]
+
+del PASTA
 
 forfiles /P "" /s /m * /c "cmd /c rename @file @fname[EXTENSAO]"
+
+.....operadores.....
+
+COMANDO1 || COMANDO2 		or / ou - executa o COMANDO2 se o COMANDO1 falhar
+COMANDO1 && COMANDO2 		and / e - executa o COMANDO2 se o COMANDO1 funcionar
+CONTEUDO > ARQUIVO.BAT  	inserir CONTEUDO em ARQUIVO.BAT
+CONTEUDO >> ARQUIVO.BAT 	inserir CONTEUDO ao final do ARQUIVO.BAT
+COMANDO1 | COMANDO2 		enviar a saida do COMANDO1 para a entrada do COMANDO2
+COMANDO1 <  ARQUIVO.BAT		redirecionar a entrada do COMANDO1 para o ARQUIVO.BAT
+
+gtr 		maior que
+lss 		menor que
+equ 		igual
+neq		desigual
+
+rem		comentário
+IF ERRORLEVEL 1 (echo Erro! && call :LabelErro) ELSE (echo Sucesso! && call :LabelSucesso)
