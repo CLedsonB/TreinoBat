@@ -1,0 +1,4 @@
+as variaveis locais definadas no arquivo vars.bat são passadas para o arquivo main.bat, nesse arquivo as variaveis tem seu endereço renomeado e são utilizadas normalmente.
+
+uso : 
+criar arquivo.bat para criar variaveis no arquivo vars.bat e tornar mais dinamico o processo, permitindo alterações.
